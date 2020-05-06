@@ -1,0 +1,53 @@
+.photo-gareley__wrapper {
+  padding-top: 41px;
+  padding-bottom: 44px;
+}
+
+.photo-gareley__slogan {
+  line-height: 30px;
+  text-align: center;
+}
+
+.panarama-list,
+.photo-list {
+  @include list-reset;
+}
+
+.panarama-list {
+  margin-bottom: 20px;
+}
+
+.photo-list__items {
+  margin-bottom: 20px;
+}
+
+.photo-list li:last-child {
+  margin-bottom: 0;
+}
+
+.panarama-list__image,
+.photo-list__image {
+  display: block;
+}
+
+.photo-list__text {
+  @include margin-reset;
+
+  padding-top: 23px;
+  padding-bottom: 14px;
+  background-color: #f2f2f2;
+}
+
+.photo-list__autor {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.photo-list__date {
+  font-weight: 300;
+  color: #5e6873;
+}
+
+.photo-list__like {
+  color: #d22856;
+}

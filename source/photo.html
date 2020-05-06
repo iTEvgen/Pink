@@ -7,35 +7,37 @@
   <title>Pink Фотографии</title>
 </head>
 <body>
-  <header class="page-header wrapper">
-    <nav class="maim-nav">
-      <a class="main-nav__logo">
-        <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__items">
-          <a class="site-list__item" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__items">
-          <a class="site-list__item site-list__item--active">Фотографии</a>
-        </li>
-        <li class="site-list__items">
-          <a class="site-list__item" href="form.html" >Конкурс</a>
-        </li>
-        <li class="site-list__items">
-          <a class="site-list__item" href="">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="page-galerey">
-    <h1 class="">Фотогалерея "Pink"</h1>
-    <div class="photo-gareley__baner wrapper">
-      <h2 class="photo-gareley__hedar">Фотографии пользователей</h2>
+  <header class="page-header page-header--photo">
+    <div class="page-header__baner">
+      <nav class="maim-nav">
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__items">
+            <a class="site-list__item" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__items">
+            <a class="site-list__item site-list__item--active">Фотографии</a>
+          </li>
+          <li class="site-list__items">
+            <a class="site-list__item" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__items">
+            <a class="site-list__item" href="">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="photo-head__tittle">Фотографии пользователей</h2>
     </div>
+  </header>
+
+  <main class="page-galerey">
+    <h1 class="visually-hidden">Фотогалерея "Pink"</h1>
+
     <section class="photo-gareley">
-      <h2 class="">Галерея</h2>
+      <h2 class="visually-hidden">Галерея</h2>
       <div class="photo-gareley__wrapper wrapper">
         <p class="photo-gareley__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
@@ -44,11 +46,11 @@
           <a class="panarama-list__item" href="#">
             <img class="panarama-list__image" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама с трамплином, видом на горы и горную речку">
           </a>
-          <blockquote class="panarama-list__text">
-            <cite class="panarama-list__autor">Анна</cite>
-            <time class="panarama-list__date" datetime="2020-05-03T22:25">(5 минут назад)</time>
-            <p class="panarama-list__coment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="panarama-list__like">Нравится:<span class="panarama-list__number">215</span></p>
+          <blockquote class="photo-list__text">
+            <cite class="photo-list__autor">Анна</cite>
+            <time class="photo-list__date" datetime="2020-05-03T22:25">(5 минут назад)</time>
+            <p class="photo-list__coment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo-list__like">Нравится:<span class="panarama-list__number">215</span></p>
           </blockquote>
         </li>
       </ul>
@@ -124,7 +126,7 @@
       </div>
     </section>
     <section class="photo-editor">
-      <h2 class="">Делитесь видео</h2>
+      <h2 class="visually-hidden">Делитесь видео</h2>
       <div class="photo-editor__block wrapper">
         <p class="photo-editor__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>

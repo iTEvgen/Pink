@@ -1,0 +1,69 @@
+.page-header {
+  background-color: #000000;
+
+  &--photo {
+    padding-bottom: 65px;
+  }
+}
+
+.maim-nav {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item {
+  display: block;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #283645;
+}
+
+.header-baner__items {
+  display: block;
+}
+
+.header__intro {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.intro {
+  background-color: #1d2631;
+}
+
+.intro__button {
+  display: block;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1d2631;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.social-list {
+  @include list-reset;
+}
+
+.intro__text {
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.photo-head__tittle {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
