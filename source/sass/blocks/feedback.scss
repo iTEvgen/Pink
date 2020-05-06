@@ -1,0 +1,39 @@
+.feedback {
+  padding-top: 30px;
+}
+
+.feedback__text {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.feedback-list {
+  @include list-reset;
+}
+
+.feedback-list__items {
+  text-align: center;
+}
+
+.feedback-list__header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feedback-list__text {
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856;
+}
+
+.feedback-list__link {
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856;
+  text-decoration: none;
+}
+
+.feedback__maps {
+  display: block;
+}

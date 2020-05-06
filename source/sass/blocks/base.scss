@@ -1,0 +1,54 @@
+body {
+  min-width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283645;
+  word-wrap: break-word;
+  background-color: #ffffff;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*wrapper*/
+
+.slogan {
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+
+.slogan__text {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.slogan-wrapper {
+  padding-top: 41px;
+  padding-bottom: 44px;
+}
+
+.slogan-text {
+  line-height: 30px;
+  text-align: center;
+}
+

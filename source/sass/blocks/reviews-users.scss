@@ -1,0 +1,20 @@
+.reviews-users {
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+.review-list__items {
+  text-align: center;
+}
+
+.review-list__author-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+}
+
+.review-list__items + .review-list__items {
+  display: none;
+}

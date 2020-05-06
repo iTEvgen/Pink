@@ -7,122 +7,135 @@
   <title>Форма Pink</title>
 </head>
 <body>
-  <header class="page-header wrapper">
-    <nav class="maim-nav">
-      <a class="main-nav__logo">
-        <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__items">
-          <a class="site-list__item" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__items">
-          <a class="site-list__item site-list__item--active" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__items">
-          <a class="site-list__item site-list__item--active">Конкурс</a>
-        </li>
-        <li class="site-list__items">
-          <a href="" class="site-list__item">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="page-header page-header--form">
+    <div class="page-header__baner">
+      <div class="wrapper">
+        <nav class="maim-nav maim-nav--form">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__items">
+              <a class="site-list__item" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__items">
+              <a class="site-list__item" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__items">
+              <a class="site-list__item site-list__item--active">Конкурс</a>
+            </li>
+            <li class="site-list__items">
+              <a class="site-list__item" href="">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <h2 class="header__tittle">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      </div>
+    </div>
   </header>
   <main class="page-form">
-    <h1 class="">Форма связи "Pink"</h1>
-    <div class="page-form__baner wrapper">
-      <h2 class="page-form__hedar">Конкурс на самое безбашенное путешествие с Пинк</h2>
-    </div>
+    <h1 class="visually-hidden">Форма связи "Pink"</h1>
     <section class="forma">
-      <h2 class="">Участвуй в розыгрыше</h2>
-      <div class="forma-wrapper__slogan wrapper">
-        <p class="forma__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <h2 class="visually-hidden">Участвуй в розыгрыше</h2>
+      <div class="slogan-wrapper forma-wrapper wrapper">
+        <p class="slogan-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </div>
       <form class="contest-form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="contest-form__block wrapper">
-          <legend class="contest-form__head">Имя пользователя</legend>
-          <p class="contest-form__items">
+        <fieldset class="contest-form__block-text wrapper">
+          <legend class="visually-hidden">Имя пользователя</legend>
+          <p class="contest-form__items-text">
             <label class="contest-form__title" for="surname-id">Фамилия:</label>
             <input class="contest-form__text" id="surname-id" type="text" name="surname" placeholder="Укажите фамилию *">
           </p>
-          <p class="contest-form__items">
+          <p class="contest-form__items-text">
             <label class="contest-form__title" for="name-id">Имя:</label>
             <input class="contest-form__text" id="name-id" type="text" name="name" placeholder="Укажите ваше имя *">
           </p>
-          <p class="contest-form__items">
+          <p class="contest-form__items-text">
             <label class="contest-form__title" for="patronymic-id">Отчество:</label>
             <input class="contest-form__text" id="patronymic-id" type="text" name="patronymic" placeholder="Ну и отчество тоже *">
           </p>
         </fieldset>
-        <fieldset class="contest-form__block contest-form__block--bg-color">
-          <legend class="contest-form__head">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="contest-form__list wrapper">
-            <li class="contest-form__items">
-              <input class="contest-form__checkbox" id="shark-id" type="checkbox" name="shark" checked="checked">
-              <label class="contest-form__title" for="shark-id">Сделал селфи с акулой</label>
-            </li>
-            <li class="contest-form__items">
-              <input class="contest-form__checkbox" id="beach-id" type="checkbox" name="beach" checked="checked">
-              <label class="contest-form__title" for="beach-id">Обгорел на пляже</label>
-            </li>
-            <li class="contest-form__items">
-              <input class="contest-form__checkbox" id="chuck-norris-id" type="checkbox" name="chuck-norris">
-              <label class="contest-form__title" for="chuck-norris-id">Видел Чака Норриса</label>
-            </li>
-            <li class="contest-form__items">
-              <input class="contest-form__checkbox" id="souvenir-id" type="checkbox" name="souvenir">
-              <label class="contest-form__title" for="souvenir-id">Накупил сувениров</label>
-            </li>
-            <li class="contest-form__items">
-              <input class="contest-form__checkbox" id="tower-id" type="checkbox" name="tower" checked="checked">
-              <label class="contest-form__title" for="tower-id">Удержал башню</label>
-            </li>
-            <li class="contest-form__items">
-              <input class="contest-form__checkbox" id="fire-hotel-id" type="checkbox" name="fire-hotel">
-              <label class="contest-form__title" for="fire-hotel-id">Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="contest-form__block wrapper">
-          <legend class="contest-form__head">Телефон пользователя</legend>
-          <p class="contest-form__items">
+
+        <div class="wrapper-bg-golor">
+          <fieldset class="contest-form__block">
+            <legend class="contest-form__head">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="contest-form__list">
+                <li class="contest-form__items">
+                  <input class="contest-form__checkbox" id="shark-id" type="checkbox" name="shark" checked="checked">
+                  <label class="contest-form__box" for="shark-id">Сделал селфи с акулой</label>
+                </li>
+                <li class="contest-form__items">
+                  <input class="contest-form__checkbox" id="beach-id" type="checkbox" name="beach" checked="checked">
+                  <label class="contest-form__box" for="beach-id">Обгорел на пляже</label>
+                </li>
+                <li class="contest-form__items">
+                  <input class="contest-form__checkbox" id="chuck-norris-id" type="checkbox" name="chuck-norris">
+                  <label class="contest-form__box" for="chuck-norris-id">Видел Чака Норриса</label>
+                </li>
+                <li class="contest-form__items">
+                  <input class="contest-form__checkbox" id="souvenir-id" type="checkbox" name="souvenir">
+                  <label class="contest-form__box" for="souvenir-id">Накупил сувениров</label>
+                </li>
+                <li class="contest-form__items">
+                  <input class="contest-form__checkbox" id="tower-id" type="checkbox" name="tower" checked="checked">
+                  <label class="contest-form__box" for="tower-id">Удержал башню</label>
+                </li>
+                <li class="contest-form__items">
+                  <input class="contest-form__checkbox" id="fire-hotel-id" type="checkbox" name="fire-hotel">
+                  <label class="contest-form__box" for="fire-hotel-id">Разгромил отель</label>
+                </li>
+              </ul>
+          </fieldset>
+        </div>
+
+        <fieldset class="contest-form__block-text wrapper">
+          <legend class="visually-hidden">Телефон пользователя</legend>
+          <p class="contest-form__items-text">
             <label class="contest-form__title" for="telephone-id">Номер телефона</label>
             <input class="contest-form__text" id="telephone-id" title="+7 XXX XXX XX XX" type="tel" name="telephone" placeholder="Номер, пожалуйста">
           </p>
-          <p class="contest-form__items">
+          <p class="contest-form__items-text">
             <label class="contest-form__title" for="e-mail-id">Адрес почты</label>
             <input class="contest-form__text" id="e-mail-id" type="email" name="e-mail" placeholder="Введите почту *">
           </p>
         </fieldset>
-        <fieldset class="contest-form__block contest-form__block--bg-color">
-          <legend class="contest-form__head">С каким приложением путешествовали?</legend>
-          <ul class="contest-form__list wrapper">
-            <li class="contest-form__items">
-              <input class="contest-form__radio" id="ios-id" type="radio" name="platform" value="iOS" checked="checked">
-              <label class="contest-form__title" for="ios-id">Pink для iOS</label>
-            </li>
-            <li class="contest-form__items">
-              <input class="contest-form__radio" id="android-id" type="radio" name="platform" value="android">
-              <label class="contest-form__title" for="android-id">Pink на Android</label>
-            </li>
-            <li class="contest-form__items">
-              <input class="contest-form__radio" id="windows-id" type="radio" name="platform" value="windows">
-              <label class="contest-form__title" for="windows-id">Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="contest-form__block">
+
+        <div class="wrapper-bg-golor wrapper-bg-golor--marg-btm">
+          <fieldset class="contest-form__block ">
+            <legend class="contest-form__head">С каким приложением путешествовали?</legend>
+            <div class="wrapper">
+              <ul class="contest-form__list">
+                <li class="contest-form__items">
+                  <input class="contest-form__radio" id="ios-id" type="radio" name="platform" value="iOS" checked="checked">
+                  <label class="contest-form__box" for="ios-id">Pink для iOS</label>
+                </li>
+                <li class="contest-form__items">
+                  <input class="contest-form__radio" id="android-id" type="radio" name="platform" value="android">
+                  <label class="contest-form__box" for="android-id">Pink на Android</label>
+                </li>
+                <li class="contest-form__items">
+                  <input class="contest-form__radio" id="windows-id" type="radio" name="platform" value="windows">
+                  <label class="contest-form__box" for="windows-id">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+
+        <fieldset class="contest-form__block-emo wrapper">
           <legend class="contest-form__head">Опишите свои эмоции</legend>
           <textarea class="contest-form__emotions" name="emotions" cols="20" rows="5" wrap="hard" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <div class="contest-form__send sending wrapper">
+        <div class="contest-form__send sending">
           <button class="sending__dutton" type="submit">Отправить отзыв</button>
-          <span class="sending__text">* — обязательные поля</span>
+          <span class="sending__text"><span>*</span> — обязательные поля</span>
         </div>
       </form>
     </section>
   </main>
+
   <footer class="page-footer">
     <div class="footer-logo">
       <a class="footer-logo__link" href="index.html"><span class="">Pink</span></a>

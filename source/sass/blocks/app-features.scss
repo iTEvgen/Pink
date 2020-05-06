@@ -1,0 +1,25 @@
+.app-features {
+  padding-top: 58px;
+  background-color: #f2f2f2;
+}
+
+.feature-list {
+  @include list-reset;
+
+  margin-bottom: 44px;
+}
+
+.feature-list__items {
+  text-align: center;
+}
+
+.feature-list__header {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.app-features img {
+  display: block;
+}
