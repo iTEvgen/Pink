@@ -1,0 +1,75 @@
+.contest-form__block-text {
+  @include padding-reset;
+
+  margin-bottom: 30px;
+}
+
+.contest-form__title {
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.contest-form__text {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+}
+
+.wrapper-bg-golor {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+
+  &--marg-btm {
+    margin-bottom: 20px;
+  }
+}
+
+.contest-form__block {
+  @include padding-reset;
+}
+
+.contest-form__head {
+  margin-bottom: 10px;
+  line-height: 18px;
+  color: #d22856;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest-form__list {
+  @include list-reset;
+}
+
+.contest-form__box {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest-form__block-emo {
+  @include padding-reset;
+
+  margin-bottom: 30px;
+}
+
+.contest-form__emotions {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.sending__dutton {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+}
+
+.sending__text span {
+  color: #d22856;
+}

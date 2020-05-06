@@ -4,10 +4,23 @@
   &--photo {
     padding-bottom: 65px;
   }
+
+  &--form {
+    padding-bottom: 50px;
+  }
 }
 
 .maim-nav {
+  margin-bottom: 110px;
   background-color: rgba(0, 0, 0, 0.3);
+
+  &--photo {
+    margin-bottom: 33px;
+  }
+
+  &--form {
+    margin-bottom: 33px;
+  }
 }
 
 .site-list {
@@ -61,7 +74,7 @@
   color: #ffffff;
 }
 
-.photo-head__tittle {
+.header__tittle {
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
