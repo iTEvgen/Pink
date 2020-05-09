@@ -3,6 +3,23 @@
   background-color: #f2f2f2;
 }
 
+.price-list__middle {
+  width: auto;
+  margin: 0 auto;
+}
+
+.price-list__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.price-list__table {
+  width: 840px;
+  transform: translateX(-70px);
+}
+
 .price-table__head {
   font-size: 18px;
   line-height: 30px;
@@ -22,4 +39,11 @@
   line-height: 30px;
   text-transform: uppercase;
   background-color: #ffffff;
+}
+
+@media (min-width: $table-width) {
+  .price-list__table {
+    width: 620px;
+    transform: translateX(0);
+  }
 }

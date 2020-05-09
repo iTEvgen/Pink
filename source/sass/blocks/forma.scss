@@ -2,6 +2,7 @@
   @include padding-reset;
 
   margin-bottom: 30px;
+  border: none;
 }
 
 .contest-form__title {
@@ -16,6 +17,7 @@
   line-height: 30px;
   font-weight: normal;
   color: #283645;
+  box-sizing: border-box;
 }
 
 .wrapper-bg-golor {
@@ -30,6 +32,8 @@
 
 .contest-form__block {
   @include padding-reset;
+
+  border: none;
 }
 
 .contest-form__head {

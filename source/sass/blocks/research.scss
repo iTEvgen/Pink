@@ -1,0 +1,9 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $table-width) {
+  .research {
+    display: flex;
+  }
+}
