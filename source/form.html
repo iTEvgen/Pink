@@ -7,35 +7,39 @@
   <title>Форма Pink</title>
 </head>
 <body>
-  <header class="page-header page-header--form">
-    <div class="page-header__baner">
-      <div class="wrapper">
-        <nav class="maim-nav maim-nav--form">
-          <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
-          </a>
-          <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__items">
-              <a class="site-list__item" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__items">
-              <a class="site-list__item" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__items">
-              <a class="site-list__item site-list__item--active">Конкурс</a>
-            </li>
-            <li class="site-list__items">
-              <a class="site-list__item" href="">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-        <h2 class="header__tittle">Конкурс на самое безбашенное путешествие с Пинк</h2>
+  <header class="page-header">
+    <nav class="maim-nav middle-position">
+      <div class="maim-nav__grid wrapper">
+        <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
       </div>
-    </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__items site-list__items--img">
+          <a class="site-list__item site-list__item--img" href="index.html">
+            <img class="site-list__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+          </a>
+        </li>
+        <li class="site-list__items">
+          <a class="site-list__item" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__items" href="index.html">
+           <a class="site-list__item " href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__items">
+          <a class="site-list__item site-list__item--active">Конкурс</a>
+        </li>
+        <li class="site-list__items">
+          <a class="site-list__item" href="">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page-form">
     <h1 class="visually-hidden">Форма связи "Pink"</h1>
+    <section class="intro-galerye">
+      <div class="wrapper">
+        <h2 class="intro-galerye__head">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      </div>
+    </section>
     <section class="forma">
       <h2 class="visually-hidden">Участвуй в розыгрыше</h2>
       <div class="slogan-wrapper forma-wrapper wrapper">
@@ -61,6 +65,7 @@
         <div class="wrapper-bg-golor">
           <fieldset class="contest-form__block">
             <legend class="contest-form__head">Ваши безбашенные достижения в путешествии</legend>
+            <div class="wrapper">
               <ul class="contest-form__list">
                 <li class="contest-form__items">
                   <input class="contest-form__checkbox" id="shark-id" type="checkbox" name="shark" checked="checked">
@@ -87,6 +92,7 @@
                   <label class="contest-form__box" for="fire-hotel-id">Разгромил отель</label>
                 </li>
               </ul>
+            </div>
           </fieldset>
         </div>
 

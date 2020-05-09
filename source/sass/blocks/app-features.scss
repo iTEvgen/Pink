@@ -20,6 +20,50 @@
   color: #000000;
 }
 
-.app-features img {
+.app-features__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-features__image-wrap {
+  align-self: center;
+}
+
+.app-features__image {
   display: block;
+}
+
+.app-features__image + .app-features__image {
+  display: none;
+}
+
+@media (min-width: $table-width) {
+  .app-features__grid {
+    flex-direction: row-reverse;
+  }
+
+  .app-features__image-wrap {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app-features__grid {
+    flex-direction: column-reverse;
+  }
+
+  .app-features__list {
+    display: flex;
+  }
+
+  .app-features__image-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-self: stretch;
+  }
+
+  .app-features__image + .app-features__image {
+    display: block;
+  }
 }

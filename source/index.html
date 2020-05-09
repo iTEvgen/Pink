@@ -8,62 +8,63 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__index-baner">
-      <div class="wrapper">
-        <nav class="maim-nav">
-          <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
-          </a>
-          <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__items">
-              <a class="site-list__item site-list__item--active">Главная</a>
-            </li>
-            <li class="site-list__items">
-              <a class="site-list__item" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__items">
-              <a class="site-list__item" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__items">
-              <a class="site-list__item" href="">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-        <img class="header-baner__items" src="http://placehold.it/320x314" width="320" height="314" alt="Демонстрация обработки скучной серой фотографии в розовый цвет">
+    <nav class="maim-nav middle-position">
+      <div class="maim-nav__grid wrapper">
+        <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
       </div>
-    </div>
-
-    <section class="header__intro intro">
-      <h2 class="visually-hidden">Наше приложение есть на всех известных платформах</h2>
-      <a class="intro__button" href="">Скачать приложение</a>
-      <ul class="intro__list social-list">
-        <li class="social-list__items">
-          <a class="social-list__item" href="https://www.apple.com/ru/ios/app-store/" target="_blank"><span class="">App Store</span></a>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__items site-list__items--img">
+          <a class="site-list__item site-list__item--img"><img class="site-list__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink"></a>
         </li>
-        <li class="social-list__items">
-          <a class="social-list__item" href="https://play.google.com/store" target="_blank"><span class="">Google Play</span></a>
+        <li class="site-list__items">
+          <a class="site-list__item site-list__item--active">Главная</a>
         </li>
-        <li class="social-list__items">
-          <a class="social-list__item" href="https://www.microsoft.com/ru-ru/store/apps/windows" target="_blank"><span class="">Microsoft Store</span></a>
+        <li class="site-list__items">
+           <a class="site-list__item" href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__items">
+          <a class="site-list__item" href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__items">
+          <a class="site-list__item" href="">HTML Academy</a>
         </li>
       </ul>
-      <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
-
+    </nav>
   </header>
 
   <main class="page-main">
 
     <h1 class="visually-hidden">Фотоприложения для раскрашивания серых будней "Pink"</h1>
+    <section class="intro">
+      <h2 class="visually-hidden">Наше приложение есть на всех известных платформах</h2>
+      <div class="intro__wrapper wrapper">
+        <div class="intro_grid">
+          <p class="intro__title">Взгляните на жизнь иначе!</p>
+          <a class="intro__button" href="">Скачать приложение</a>
+          <ul class="intro__list social-list">
+            <li class="social-list__items">
+               <a class="social-list__item" href="https://www.apple.com/ru/ios/app-store/" target="_blank"><span class="">App Store</span></a>
+            </li>
+            <li class="social-list__items">
+              <a class="social-list__item" href="https://play.google.com/store" target="_blank"><span class="">Google Play</span></a>
+            </li>
+            <li class="social-list__items">
+              <a class="social-list__item" href="https://www.microsoft.com/ru-ru/store/apps/windows" target="_blank"><span class="">Microsoft Store</span></a>
+            </li>
+          </ul>
+          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
+
     <div class="slogan wrapper">
         <p class="slogan__text">Устали от серости мегаполиса?</p>
         <p class="slogan__text">Нам есть, что вам предложить!</p>
     </div>
 
-    <section class="app-features wrapper">
+    <section class="app-features">
       <h2 class="visually-hidden">Преимущества нашего приложения</h2>
-      <div class="wrapper">
+      <div class="app-features__grid wrapper">
         <ul class="app-features__list feature-list">
           <li class="feature-list__items">
             <h3 class="feature-list__header">Поднимает настроение</h3>
@@ -78,7 +79,21 @@
             <p class="feature-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="http://placehold.it/157x320" width="157" height="320" alt="Серая и скучная фотография окрашена в розовый цвет">
+        <div class="app-features__image-wrap">
+          <img class="app-features__image" src="http://placehold.it/157x320" width="157" height="320" alt="Серая и скучная фотография окрашена в розовый цвет">
+          <img class="app-features__image" src="http://placehold.it/157x320" width="157" height="320" alt="Серая и скучная фотография окрашена в розовый цвет">
+          <img class="app-features__image" src="http://placehold.it/157x320" width="157" height="320" alt="Серая и скучная фотография окрашена в розовый цвет">
+        </div>
+      </div>
+    </section>
+
+    <section class="research wrapper">
+      <h2 class="visually-hidden">Исследование</h2>
+      <div class="research__number"><span>24</span></div>
+      <div class="research__header">
+        <h3 class="research__title">Эффектна 24 часа!</h3>
+        <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="research__link" href="">Узнать больше об исследовании</a>
       </div>
     </section>
 
@@ -111,26 +126,40 @@
 
     <section class="price-list">
       <h2 class="visually-hidden">Тарифы и расценки наших услуг</h2>
-      <div class="price-list__wrapper wrapper">
-        <table class="price-list__table price-table">
-          <tr class="price-table__head">
-            <th>Стандарт <span class="price-table__price">3,99 usd</span></th>
-          </tr>
-          <tr class="price-table__body">
-            <td>Розовый фильтр</td>
-          </tr>
-          <tr class="price-table__body">
-            <td>Смайлики</td>
-          </tr>
-          <tr class="price-table__body">
-            <td>Комментарии</td>
-          </tr>
-        </table>
-        <p class="price-table__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+      <div class="price-list__middle">
+        <div class="price-list__wrapper">
+          <table class="price-list__table price-table">
+            <tr class="price-table__head">
+              <th class="price-table__title price-table__title--hidden"></th>
+              <th>База <span class="price-table__price">1,99 usd</span></th>
+              <th>Стандарт <span class="price-table__price">3,99 usd</span></th>
+              <th>Анлим <span class="price-table__price">9,99 usd</span></th>
+            </tr>
+            <tr class="price-table__body">
+              <td>Розовый фильтр</td>
+              <td><span class="">Розовый фильтр</span></td>
+              <td><span class="">Розовый фильтр</span></td>
+              <td><span class="">Розовый фильтр</span></td>
+            </tr>
+            <tr class="price-table__body">
+              <td>Смайлики</td>
+              <td><span class="">Смайлики</span></td>
+              <td><span class="">Смайлики</span></td>
+              <td><span class="">Смайлики</span></td>
+            </tr>
+            <tr class="price-table__body">
+              <td>Комментарии</td>
+              <td><span class="">Комментарии</span></td>
+              <td><span class="">Комментарии</span></td>
+              <td><span class="">Комментарии</span></td>
+            </tr>
+          </table>
+          <p class="price-table__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -153,14 +182,13 @@
           </li>
         </ul>
       </div>
-      <img class="feedback__maps" src="http://placehold.it/320x200" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
+      <img class="feedback__maps middle-position" src="http://placehold.it/320x200" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
     </section>
-
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer foter-index wrapper">
     <div class="footer-logo">
-      <a class="footer-logo__link" href=""><span class="">Pink</span></a>
+      <a class="footer-logo__link" href="#"><span class="">Pink</span></a>
     </div>
     <div class="footer-social">
       <ul class="footer-social__list">
