@@ -21,8 +21,8 @@
         <li class="site-list__items">
           <a class="site-list__item" href="index.html">Главная</a>
         </li>
-        <li class="site-list__items" href="index.html">
-           <a class="site-list__item site-list__item--active">Фотографии</a>
+        <li class="site-list__items">
+          <a class="site-list__item site-list__item--active">Фотографии</a>
         </li>
         <li class="site-list__items">
           <a class="site-list__item" href="form.html">Конкурс</a>
@@ -141,17 +141,29 @@
         <div class="photo-editor__wrapper wrapper">
           <img class="photo-editor__image" src="http://placehold.it/280x374" width="280" height="374" alt="">
           <div class="seting-control__wrapper">
-            <div class="button-wraper">
-              <button class="seting-control__button control__button--one" type="button"><span class="">Обрезать</span></button>
-              <button class="seting-control__button control__button--two" type="button"><span class="">Заливка</span></button>
-              <button class="seting-control__button control__button--three" type="button"><span class="">Контраст</span></button>
-            </div>
-            <div class="range-wrapper">
-              <div class="range-wrapper__crop">
-                <div class="seting-control__range"></div>
-                <span class="seting-control__range-control"></span>
-              </div>
-            </div>
+            <ul class="seting-control__list">
+              <li class="seting-control__items" tabindex="0">
+                <div class="range-wrapper__crop range-wrapper__crop--active">
+                  <div class="seting-control__range"></div>
+                  <span class="seting-control__range-control"></span>
+                </div>
+                <span class="">Обрезать</span>
+              </li>
+              <li class="seting-control__items" tabindex="0">
+                <div class="range-wrapper__crop">
+                  <div class="seting-control__range"></div>
+                  <span class="seting-control__range-control"></span>
+                </div>
+                <span class="">Заливка</span>
+              </li>
+              <li class="seting-control__items" tabindex="0">
+                <div class="range-wrapper__crop">
+                  <div class="seting-control__range"></div>
+                  <span class="seting-control__range-control"></span>
+                </div>
+                <span class="">Контраст</span>
+              </li>
+            </ul>
             <div class="send-button__wrapper">
               <button class="send-button send-button--submit" type="submit">Запостить</button>
               <button class="send-betton send-button--reset" type="reset">Отмена</button>
