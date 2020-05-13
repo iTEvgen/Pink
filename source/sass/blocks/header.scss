@@ -120,11 +120,17 @@
 }
 
 @media (min-width: $table-width) {
+  .intro {
+    min-height: 729px;
+    background-color: #1d2631;
+    background-image: url("../img/baner-table@1x.jpg");
+  }
+
   .intro__wrapper {
     &::before {
       content: "";
       position: absolute;
-      top: 188px;
+      top: 184px;
       left: auto;
       right: 20px;
       width: 470px;
@@ -172,5 +178,24 @@
 
   .site-list__item {
     padding: 0;
+  }
+
+  .intro {
+    min-height: 853px;
+    background-color: #1d2631;
+    background-image: url("../img/baner-desktop@1x.jpg");
+  }
+
+  .intro__wrapper {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 208px;
+      left: auto;
+      right: 20px;
+      width: 597px;
+      height: 645px;
+      background-image: url("../img/iphone-hend-desk@1x.png");
+    }
   }
 }
