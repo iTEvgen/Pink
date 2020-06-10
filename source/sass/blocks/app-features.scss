@@ -1,23 +1,10 @@
 .app-features {
-  padding-top: 58px;
+  padding-top: 78px;
   background-color: #f2f2f2;
-}
-
-.feature-list {
-  @include list-reset;
-
-  margin-bottom: 44px;
-}
-
-.feature-list__items {
-  text-align: center;
-}
-
-.feature-list__header {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #000000;
+  background-image: url("../img/element-bottom.svg");
+  background-size: 120% auto;
+  background-position: 0 -7px;
+  background-repeat: no-repeat;
 }
 
 .app-features__grid {
@@ -26,12 +13,37 @@
   align-items: center;
 }
 
+.feature-list {
+  @include list-reset;
+
+  margin-bottom: 11px;
+}
+
+.feature-list__items {
+  margin-bottom: 29px;
+  text-align: center;
+}
+
+.feature-list__header {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.feature-list__text {
+  margin: 0;
+}
+
 .app-features__image-wrap {
   align-self: center;
 }
 
 .app-features__image {
   display: block;
+  width: 157px;
+  height: 278px;
 }
 
 .app-features__image + .app-features__image {
@@ -39,16 +51,45 @@
 }
 
 @media (min-width: $table-width) {
+  .app-features {
+    padding-top: 19px;
+  }
+
   .app-features__grid {
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .feature-list {
+    width: 310px;
+    margin-bottom: 41px;
+    padding-top: 68px;
+  }
+
+  .feature-list__items {
+    margin-bottom: 33px;
+    text-align: left;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .app-features__image-wrap {
     align-self: flex-end;
   }
+
+  .app-features__image {
+    width: 268px;
+    height: 483px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .app-features {
+    padding-top: 59px;
+  }
+
   .app-features__grid {
     flex-direction: column-reverse;
   }
@@ -65,5 +106,35 @@
 
   .app-features__image + .app-features__image {
     display: block;
+  }
+
+  .app-features__image {
+    width: 294px;
+    height: 302px;
+  }
+
+  .feature-list {
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 56px;
+  }
+
+  .feature-list__items {
+    width: 294px;
+    margin-bottom: 0;
+    padding-left: 27px;
+    padding-right: 27px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .feature-list__header {
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+
+  .feature-list__text {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

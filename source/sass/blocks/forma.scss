@@ -1,3 +1,14 @@
+.intro-form__head {
+  @include margin-reset;
+
+  padding-top: 45px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
 .contest-form__block-text {
   @include margin-reset;
   @include padding-reset;
@@ -90,7 +101,7 @@
   text-transform: uppercase;
 }
 
-.sending__text span {
+.sending__text sup {
   color: #d22856;
 }
 
@@ -113,6 +124,12 @@
 }
 
 @media (min-width: $table-width) {
+  .intro-form__head {
+    padding-top: 98px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .contest-form__items-text {
     flex-direction: row;
 
@@ -167,6 +184,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro-form__head {
+    padding-top: 71px;
+  }
+
   .contest-form {
     display: flex;
     flex-wrap: wrap;
