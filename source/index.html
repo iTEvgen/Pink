@@ -50,7 +50,7 @@
     <section class="intro">
       <h2 class="visually-hidden">Наше приложение есть на всех известных платформах</h2>
       <div class="intro__wrapper wrapper">
-        <div class="intro_grid">
+        <div class="intro__grid">
           <p class="intro__title">Взгляните<br> на жизнь<br> иначе!</p>
           <a class="intro__button" href="">Скачать приложение</a>
           <ul class="intro__list social-list">
@@ -155,23 +155,27 @@
             <p class="review-list__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
             </p>
-            <cite class="review-list__author-name">Николай Петров</cite>
+            <cite class="review-list__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
           </blockquote>
           <blockquote class="review-list__items slider__items">
             <p class="review-list__text">&laquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et posuere quam, sed porta dolor.
               Nam vitae orci ipsum. Aliquam lectus dui, tempus at lobortis ut, laoreet eget magna.&raquo;
             </p>
-            <cite class="review-list__author-name">Сергей Иванов</cite>
+            <cite class="review-list__author-name">Сергей Иванов <span>25 лет, водитель трамвая</span></cite>
           </blockquote>
           <blockquote class="review-list__items slider__items">
             <p class="review-list__text">&laquo;Donec et lorem non velit porttitor aliquam. Nam sit amet purus at nulla vestibulum placerat.&raquo;</p>
-            <cite class="review-list__author-name">Иван Петров</cite>
+            <cite class="review-list__author-name">Иван Петров <span>25 лет, водитель трамвая</span></cite>
           </blockquote>
         </div>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button class="slider__toggle slider__toggle--check" type="button"><span class="visually-hidden">1</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+          <span class="reviews__toggles-desk">
+            <button class="slider__toggle-desk slider__toggle-desk--left" type="button"><span class="visually-hidden">back</span></button>
+            <button class="slider__toggle-desk slider__toggle-desk--right" type="button"><span class="visually-hidden">forward</span></button>
+          </span>
         </p>
       </div>
     </section>
@@ -183,33 +187,33 @@
           <table class="price-list__table price-table">
             <tr class="price-table__head">
               <th class="price-table__title price-table__title--hidden"></th>
-              <th>База <span class="price-table__price">1,99 usd</span></th>
-              <th>Стандарт <span class="price-table__price">3,99 usd</span></th>
-              <th>Анлим <span class="price-table__price">9,99 usd</span></th>
+              <th class="price-table__title">База<br> <span class="price-table__price">1,99 usd</span></th>
+              <th class="price-table__title">Стандарт<br> <span class="price-table__price">3,99 usd</span></th>
+              <th class="price-table__title">Анлим<br> <span class="price-table__price">9,99 usd</span></th>
             </tr>
             <tr class="price-table__body">
-              <td>Розовый фильтр</td>
-              <td><span class="">Розовый фильтр</span></td>
-              <td><span class="">Розовый фильтр</span></td>
-              <td><span class="">Розовый фильтр</span></td>
+              <td class="price-table__title-text">Розовый фильтр</td>
+              <td class="price-table__text"><span>Розовый фильтр</span></td>
+              <td class="price-table__text"><span>Розовый фильтр</span></td>
+              <td class="price-table__text"><span>Розовый фильтр</span></td>
             </tr>
             <tr class="price-table__body">
-              <td>Смайлики</td>
-              <td><span class="">Смайлики</span></td>
-              <td><span class="">Смайлики</span></td>
-              <td><span class="">Смайлики</span></td>
+              <td class="price-table__title-text">Смайлики</td>
+              <td class="price-table__text price-table__text--mody"><span>Смайлики</span></td>
+              <td class="price-table__text"><span>Смайлики</span></td>
+              <td class="price-table__text"><span>Смайлики</span></td>
             </tr>
             <tr class="price-table__body">
-              <td>Комментарии</td>
-              <td><span class="">Комментарии</span></td>
-              <td><span class="">Комментарии</span></td>
-              <td><span class="">Комментарии</span></td>
+              <td class="price-table__title-text">Комментарии</td>
+              <td class="price-table__text price-table__text--mody"><span>Комментарии</span></td>
+              <td class="price-table__text price-table__text--mody"><span>Комментарии</span></td>
+              <td class="price-table__text"><span>Комментарии</span></td>
             </tr>
           </table>
           <p class="price-table__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle slider__toggle--check" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </div>
@@ -220,21 +224,25 @@
       <div class="feedback__wrapper wrapper">
         <p class="feedback__text">Остались вопросы?<br> Свяжитесь с нами!</p>
         <ul class="feedback-list">
-          <li class="feedback-list__items">
-            <b class="feedback-list__header">Звоните:</b>
+          <li class="feedback-list__items feedback-list__items--phone">
+            <b class="feedback-list__header feedback-list__header--phone">Звоните:</b>
             <p class="feedback-list__text">+7 (812) 555-66-66</p>
           </li>
-          <li class="feedback-list__items">
-            <b class="feedback-list__header">Пишите:</b>
+          <li class="feedback-list__items feedback-list__items--mail">
+            <b class="feedback-list__header feedback-list__header--mail">Пишите:</b>
             <a class="feedback-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="feedback-list__items">
-            <b class="feedback-list__header">Приезжайте в гости:</b>
-            <p class="feedback-list__text">ул. Большая Конюшенная, 19/8</p>
+          <li class="feedback-list__items feedback-list__items--addres">
+            <b class="feedback-list__header feedback-list__header--addres">Приезжайте в гости:</b>
+            <p class="feedback-list__text">ул. Большая<br> Конюшенная, 19/8</p>
           </li>
         </ul>
       </div>
-      <img class="feedback__maps middle-position" src="http://placehold.it/320x200" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
+      <div class="feedback__wrapper-map">
+        <div>
+          <img class="feedback__maps" src="img/map-mobile@1x.jpg" alt="ул. Большая Конюшенная, 19/8">
+        </div>
+      </div>
     </section>
   </main>
 

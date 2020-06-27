@@ -156,39 +156,57 @@
     </section>
     <section class="photo-editor">
       <h2 class="visually-hidden">Делитесь видео</h2>
-      <div class="slogan-wrapper wrapper">
-        <p class="slogan-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="photo-editor__slogan-wrapper wrapper">
+        <p class="photo-editor__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <div class="photo-editor__bg-wrapper">
         <div class="photo-editor__wrapper wrapper">
-          <img class="photo-editor__image" src="http://placehold.it/280x374" width="280" height="374" alt="">
+          <img class="photo-editor__image" src="img/photo-7-mobile@1x.jpg" alt="">
           <div class="seting-control__wrapper">
             <ul class="seting-control__list">
-              <li class="seting-control__items" tabindex="0">
-                <div class="range-wrapper__crop range-wrapper__crop--active">
+              <li class="seting-control__items">
+                <button class="seting-control__btn seting-control__btn--on" type="button">
+                  <svg class="seting-control__icon seting-control__icon--crop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="44" height="44">
+                    <path d="M0 0h48v48H0z" fill="none"/>
+                    <path class="icon-color" d="M34 30h4V14a4 4 0 00-4-4H18v4h16zm-20 4V2h-4v8H2v4h8v20a4 4 0 004 4h20v8h4v-8h8v-4z" fill="#000000"/>
+                  </svg>
+                  <span class="visually-hidden">Обрезать</span>
+                </button>
+                <div class="range-wrapper range-wrapper--crop">
                   <div class="seting-control__range"></div>
                   <span class="seting-control__range-control"></span>
                 </div>
-                <span class="">Обрезать</span>
               </li>
-              <li class="seting-control__items" tabindex="0">
-                <div class="range-wrapper__crop">
-                  <div class="seting-control__range"></div>
-                  <span class="seting-control__range-control"></span>
+              <li class="seting-control__items">
+                <button class="seting-control__btn" type="button">
+                  <svg class="seting-control__icon seting-control__icon--fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="54" height="54">
+                    <path d="M0 0h48v48H0z" fill="none"/>
+                    <path class="icon-color" d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11a3 3
+                      0 004.24 0l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20zM38 23s-4 4.33-4 7a4 4 0 008 0c0-2.67-4-7-4-7zM0 40h48v3H0z" fill="#000000"/>
+                  </svg>
+                  <span class="visually-hidden">Заливка</span>
+                </button>
+                <div class="range-wrapper range-wrapper--fill">
+                  <div class="seting-control__range seting-control__range--fill"></div>
+                  <span class="seting-control__range-control seting-control__range-control--fill"></span>
                 </div>
-                <span class="">Заливка</span>
               </li>
-              <li class="seting-control__items" tabindex="0">
-                <div class="range-wrapper__crop">
-                  <div class="seting-control__range"></div>
-                  <span class="seting-control__range-control"></span>
+              <li class="seting-control__items">
+                <button class="seting-control__btn" type="button">
+                  <svg class="seting-control__icon seting-control__icon--contrast" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.92 31.92" width="32" height="32">
+                    <path class="icon-color" d="M16 4A12 12 0 114 16 12 12 0 0116 4m0-4a16 16 0 1016 16A16 16 0 0016 0zm0 24.29a8.52 8.52 0 000-17" data-name="Layer 1" fill="#000000"/>
+                  </svg>
+                  <span class="visually-hidden">Контраст</span>
+                </button>
+                <div class="range-wrapper range-wrapper--contrast">
+                  <div class="seting-control__range seting-control__range--contrast"></div>
+                  <span class="seting-control__range-control seting-control__range-control--contrast"></span>
                 </div>
-                <span class="">Контраст</span>
               </li>
             </ul>
             <div class="send-button__wrapper">
               <button class="send-button send-button--submit" type="submit">Запостить</button>
-              <button class="send-betton send-button--reset" type="reset">Отмена</button>
+              <button class="send-button send-button--reset" type="reset" disabled>Отмена</button>
             </div>
           </div>
         </div>

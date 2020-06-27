@@ -57,13 +57,19 @@ img {
 }
 
 .slogan-wrapper {
-  padding-top: 41px;
-  padding-bottom: 44px;
+  padding-top: 45px;
+  padding-bottom: 34px;
 }
 
 .slogan-text {
+  @include margin-reset;
+
   line-height: 30px;
   text-align: center;
+
+  &--mody {
+    display: none;
+  }
 }
 
 @media (min-width: $table-width) {
@@ -76,6 +82,21 @@ img {
   .slogan {
     padding-top: 50px;
     padding-bottom: 30px;
+  }
+
+  .slogan-wrapper {
+    padding-top: 92px;
+    padding-bottom: 71px;
+  }
+
+  .slogan-text {
+    font-size: 18px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &--mody {
+      display: inline;
+    }
   }
 }
 
@@ -95,5 +116,10 @@ img {
   .slogan {
     padding-top: 70px;
     padding-bottom: 16px;
+  }
+
+  .slogan-text {
+    padding-right: 68px;
+    padding-left: 68px;
   }
 }
