@@ -1,10 +1,17 @@
 .app-features {
+  position: relative;
   padding-top: 78px;
+  overflow: hidden;
   background-color: #f2f2f2;
-  background-image: url("../img/element-bottom.svg");
-  background-size: 120% auto;
-  background-position: 0 -7px;
-  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    border-left: 120vw solid #ffffff;
+    border-bottom: 10vw solid transparent;
+  }
 }
 
 .app-features__grid {
@@ -38,6 +45,7 @@
 
 .app-features__image-wrap {
   align-self: center;
+  z-index: 2;
 }
 
 .app-features__image {
