@@ -43,19 +43,21 @@
   margin: 0;
 }
 
-.app-features__image-wrap {
+.app-features__wrap {
   align-self: center;
   z-index: 2;
+}
+
+.app-features__image-wrap {
+  &--state {
+    display: none;
+  }
 }
 
 .app-features__image {
   display: block;
   width: 157px;
   height: 278px;
-}
-
-.app-features__image + .app-features__image {
-  display: none;
 }
 
 @media (min-width: $table-width) {
@@ -83,7 +85,7 @@
     }
   }
 
-  .app-features__image-wrap {
+  .app-features__wrap {
     align-self: flex-end;
   }
 
@@ -106,14 +108,16 @@
     display: flex;
   }
 
-  .app-features__image-wrap {
+  .app-features__wrap {
     display: flex;
     justify-content: space-around;
     align-self: stretch;
   }
 
-  .app-features__image + .app-features__image {
-    display: block;
+  .app-features__image-wrap {
+    &--state {
+      display: block;
+    }
   }
 
   .app-features__image {

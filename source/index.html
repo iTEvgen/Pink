@@ -127,10 +127,24 @@
             <p class="feature-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="app-features__image-wrap">
-          <img class="app-features__image" src="img/Iphone-screen-mobile@1x.png" alt="Серая и скучная фотография окрашена в розовый цвет">
-          <img class="app-features__image" src="http://placehold.it/157x320" alt="Серая и скучная фотография окрашена в розовый цвет">
-          <img class="app-features__image" src="http://placehold.it/157x320" alt="Серая и скучная фотография окрашена в розовый цвет">
+        <div class="app-features__wrap">
+          <picture class="app-features__image-wrap">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-desk-one@1x.webp 1x, img/iphone-screen-desk-one@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 66px)" srcset="img/Iphone-screen-table@1x.webp 1x, img/Iphone-screen-table@2x.webp 2x">
+            <source type="image/webp" srcset="img/Iphone-screen-mobile@1x.webp 1x, img/Iphone-screen-mobile@2x.webp 2x">
+
+            <source media="(min-width: 960px)" srcset="img/iphone-screen-desk-one@1x.npg 1x, img/iphone-screen-desk-one@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/Iphone-screen-table@1x.npg 1x, img/Iphone-screen-table@2x.png 2x">
+            <img class="app-features__image" src="img/Iphone-screen-mobile@1x.png" srcset="img/Iphone-screen-mobile@2x.png 2x" alt="Серая и скучная фотография">
+          </picture>
+          <picture class="app-features__image-wrap app-features__image-wrap--state">
+            <source type="image/webp" srcset="img/iphone-screen-desk-two@1x.webp 1x, img/iphone-screen-desk-two@2x.webp 2x">
+            <img class="app-features__image" src="img/iphone-screen-desk-two@1x.npg" srcset="img/iphone-screen-desk-two@2x.png 2x" alt="Фотография окрашена в розовый цвет">
+          </picture>
+          <picture class="app-features__image-wrap app-features__image-wrap--state">
+            <source type="image/webp" srcset="img/iphone-screen-desk-three@1x.webp 1x, img/iphone-screen-desk-three@2x.webp 2x">
+            <img class="app-features__image" src="img/iphone-screen-desk-three@1x.npg" srcset="img/iphone-screen-desk-three@2x.png 2x" alt="Фотография окрашена в розовый цвет со смайликом">
+          </picture>
         </div>
       </div>
     </section>
@@ -240,7 +254,17 @@
       </div>
       <div class="feedback__wrapper-map">
         <div>
-          <img class="feedback__maps" src="img/map-mobile@1x.jpg" alt="ул. Большая Конюшенная, 19/8">
+          <picture>
+            <source type="image/webp" media="(min-width: 1500px)" srcset="img/map-desk@1x.webp 1x, img/map-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/map-660px@1x.webp 1x, img/map-660px@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/map-table@1x.webp 1x, img/map-table@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1500px)" srcset="img/map-desk@1x.jpg 1x, img/map-desk@2x.jpg 2x">
+            <source media="(min-width: 960px)" srcset="img/map-660px@1x.jpg 1x, img/map-660px@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/map-table@1x.jpg 1x, img/map-table@2x.jpg 2x">
+            <img class="feedback__maps" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="ул. Большая Конюшенная, 19/8">
+          </picture>
         </div>
       </div>
     </section>
