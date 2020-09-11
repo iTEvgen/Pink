@@ -153,6 +153,10 @@
   @include list-reset;
 }
 
+.social-list__item {
+  display: block;
+}
+
 .intro__text {
   font-weight: 300;
   color: #ffffff;
