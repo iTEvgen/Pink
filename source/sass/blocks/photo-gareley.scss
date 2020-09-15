@@ -9,7 +9,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/baner-mobile@2x.jpg");
-    background-size: 764px;
+    background-size: 764px auto;
   }
 }
 
@@ -112,7 +112,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/baner-table@2x.jpg");
-      background-size: 1200px;
+      background-size: 1200px auto;
     }
   }
 
@@ -207,7 +207,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/baner-desktop@2x.jpg");
-      background-size: 2560px;
+      background-size: 2560px auto;
     }
   }
 
