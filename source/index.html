@@ -8,45 +8,18 @@
 </head>
 <body>
 
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="apple" viewBox="0 0 47 56">
-      <g>
-        <path d="M38.59 30.15a12.53 12.53 0 007.62 11.48 30.59 30.59 0 01-3.93 8.07c-2.36 3.46-4.82
-          6.91-8.69 7s-5-2.25-9.36-2.25-5.7 2.18-9.3 2.32S8.36 53 6 49.56c-4.87-7-8.6-19.91-3.6-28.59a13.91
-          13.91 0 0111.75-7.11c3.66-.07 7.12 2.46 9.36 2.46s6.45-3.05 10.87-2.6a13.28 13.28 0 0110.38
-          5.63c-.27.17-6.2 3.62-6.14 10.8M31.45 9.06A12.48 12.48 0 0034.4 0 12.75 12.75 0 0026 4.3c-1.83
-          2.12-3.44 5.52-3 8.78 3.19.25 6.44-1.62 8.42-4" fill="#fff"/>
-      </g>
-    </symbol>
-    <symbol id="android" viewBox="0 0 42.08 47.04">
-      <g fill="#A4C639">
-        <path class="cls-1" d="M34.14 14H7.94v19.1a3.59 3.59 0 003.31 3.62v7.44a2.89 2.89 0 005.77 0v-7.42h8.06v7.42a2.89
-          2.89 0 005.77 0v-7.44a3.6 3.6 0 003.32-3.62V14.34l-.03-.34zM2.89 15.68a2.88 2.88 0 012.88 2.88v12.38a2.88 2.88 0
-          01-2.88 2.89A2.89 2.89 0 010 30.94V18.56a2.88 2.88 0 012.89-2.88zm36.31 0a2.88 2.88 0 012.88 2.88v12.38a2.88 2.88
-          0 01-2.88 2.89 2.89 2.89 0 01-2.89-2.89V18.56a2.88 2.88 0 012.89-2.88zM8 12h26a10.48 10.48 0 00-3.19-7.28L33.32.46A.31.31
-          0 0033.2 0a.31.31 0 00-.41.11l-2.37 4.15A16.15 16.15 0 0021 .86a16.41 16.41 0 00-9.37 3.4L9.3.15A.32.32 0 008.88 0a.32.32
-          0 00-.11.42l2.44 4.23A10.52 10.52 0 008 12zm17.32-5.2a1.5 1.5 0 013 0 1.5 1.5 0 01-3 0zm-11.14 0a1.5 1.5 0 013 0 1.5 1.5 0
-          01-3 0z"/>
-      </g>
-    </symbol>
-    <symbol id="Mic-store" viewBox="0 0 43.92 41.99">
-      <g>
-        <path d="M20.87 20H0V0h20.87z" fill="#f05423"/>
-        <path d="M43.92 20H23.05V0h20.87z" fill="#84c441"/>
-        <path d="M20.87 42H0V22h20.87z" fill="#2dabe2"/>
-        <path d="M43.92 42H23.05V22h20.87z" fill="#f9bc15"/>
-      </g>
-    </symbol>
-  </svg>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="page-header">
     <nav class="main-nav main-nav--close main-nav--nojs middle-position">
       <div class="main-nav__grid">
         <a class="main-nav__link-logo">
           <picture class="main-nav__logo-image">
-            <source media="(min-width: 960px)" srcset="img/icon-logo-desk-header.svg">
-            <source media="(min-width: 660px)" srcset="img/icon-logo-table-header.svg">
-            <img src="img/icon-logo-mobile-header.svg" alt="Pink Фотоприложения">
+            <source media="(min-width: 960px)" srcset="img/logo-desk-header.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-table-header.svg">
+            <img src="img/logo-mobile-header.svg" alt="Pink Фотоприложения">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -81,7 +54,7 @@
             <li class="social-list__items">
               <a class="social-list__item" href="https://www.apple.com/ru/ios/app-store/" aria-label="Переход на сайт App Store с нашим приложением" target="_blank" title="App Store">
                 <svg role="img" focusable="false" width="47" height="56">
-                  <use xlink:href="#apple"></use>
+                  <use xlink:href="#icon-iphone"></use>
                 </svg>
                 <span class="visually-hidden">App Store</span>
               </a>
@@ -89,7 +62,7 @@
             <li class="social-list__items">
               <a class="social-list__item" href="https://play.google.com/store" aria-label="Переход на сайт Google Play с нашим приложением" target="_blank" title="Google Play">
                 <svg role="img" focusable="false" width="43" height="46">
-                  <use xlink:href="#android"></use>
+                  <use xlink:href="#icon-andriod"></use>
                 </svg>
                 <span class="visually-hidden">Google Play</span>
               </a>
@@ -97,7 +70,7 @@
             <li class="social-list__items">
               <a class="social-list__item" href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Переход на сайт Microsoft Store с нашим приложением" target="_blank" title="Microsoft Store">
                 <svg role="img" focusable="false" width="44" height="41">
-                  <use xlink:href="#Mic-store"></use>
+                  <use xlink:href="#icon-windows"></use>
                 </svg>
                 <span class="visually-hidden">Microsoft Store</span>
               </a>
@@ -277,8 +250,8 @@
     <div class="footer-logo">
       <a class="footer-logo__link" href="#">
         <picture>
-          <source media="(min-width: 960px)" srcset="img/icon-logo-desk-footer.svg">
-          <img src="img/icon-logo-table-footer.svg" alt="Pink Фотоприложения">
+          <source media="(min-width: 960px)" srcset="img/logo-desk-footer.svg">
+          <img src="img/logo-table-footer.svg" alt="Pink Фотоприложения">
         </picture>
         <span class="visually-hidden">Pink</span>
       </a>
@@ -287,7 +260,7 @@
       <li class="footer-social__items">
         <a class="footer-social__item footer-social__item--twitter" href="https://twitter.com/home" aria-label="Переход на нашу социальную сеть в твиттере" target="_blank" title="Мы в твиттере">
           <svg role="img" focusable="false" width="18" height="14">
-            <use xlink:href="img/svg-sprite.svg#icon-twitter"></use>
+            <use xlink:href="#icon-twitter"></use>
           </svg>
           <span class="visually-hidden">twitter</span>
         </a>
@@ -295,7 +268,7 @@
       <li class="footer-social__items">
         <a class="footer-social__item footer-social__item--facebook" href="https://www.facebook.com/" aria-label="Переход на нашу социальную сеть в фейсбук" target="_blank" title="Мы в фейсбук">
           <svg role="img" focusable="false" width="8" height="18">
-            <use xlink:href="img/svg-sprite.svg#icon-facebook"></use>
+            <use xlink:href="#icon-facebook"></use>
           </svg>
           <span class="visually-hidden">facebook</span>
         </a>
@@ -303,7 +276,7 @@
       <li class="footer-social__items footer-social__item--youtube">
         <a class="footer-social__item" href="https://www.youtube.com/" aria-label="Переход на наш ютуб канал" target="_blank" title="Мы в ютубе">
           <svg role="img" focusable="false" width="15" height="13">
-            <use xlink:href="img/svg-sprite.svg#icon-youtobe"></use>
+            <use xlink:href="#icon-youtobe"></use>
           </svg>
           <span class="visually-hidden">youtube</span>
         </a>
@@ -313,7 +286,7 @@
       <p class="footer-dev__text">Разработано</p>
       <a class="footer-dev__link" href="https://htmlacademy.ru" aria-label="Переход на сайт в HTML Academy" target="_blank" title="HTML Academy">
         <svg role="img" focusable="false" width="27" height="34">
-          <use xlink:href="img/svg-sprite.svg#icon-academy"></use>
+          <use xlink:href="#icon-html-academy"></use>
         </svg>
         <span class="visually-hidden">htmlacademy.ru</span>
       </a>
