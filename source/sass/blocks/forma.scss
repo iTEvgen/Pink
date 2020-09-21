@@ -52,6 +52,15 @@
   color: #283645;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
 }
 
 .contest-form__wrapper-block {
@@ -141,6 +150,14 @@
     border-left: 2px solid #d22856;
     border-bottom: 2px solid #d22856;
   }
+
+  &:hover::before {
+    border-color: #283645;
+  }
+
+  // &:focus::before {
+  //   border-color: #283645;
+  // }
 }
 
 .contest-form__box--radio-btn {
@@ -171,6 +188,11 @@
   }
 }
 
+.contest-form__checkbox:focus + .contest-form__box::before,
+.contest-form__radio:focus + .contest-form__box--radio-btn::before {
+  border-color: #d22856;
+}
+
 .contest-form__block-emo {
   @include margin-reset;
   @include padding-reset;
@@ -189,6 +211,15 @@
   resize: vertical;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
 }
 
 .contest-form__send {
@@ -205,8 +236,23 @@
   color: #ffffff;
   background-color: #2aab6d;
   text-transform: uppercase;
+  cursor: pointer;
   border: none;
   border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+button.sending__dutton[disabled] {
+  background-color: #e5e5e5;
+  cursor: default;
 }
 
 .sending__text {

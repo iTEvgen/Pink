@@ -15,12 +15,16 @@
   <header class="page-header">
     <nav class="main-nav main-nav--close main-nav--nojs middle-position">
       <div class="main-nav__grid">
-        <a class="main-nav__link-logo" href="index.html">
-          <picture class="main-nav__logo-image">
-            <source media="(min-width: 960px)" srcset="img/logo-desk-header.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-table-header.svg">
-            <img src="img/logo-mobile-header.svg" alt="Pink Фотоприложения">
-          </picture>
+        <a class="main-nav__link-logo" href="index.html" title="Pink Фотоприложения">
+          <svg class="main-nav__logo-image icon-logo-mobile-header" role="img" focusable="false" width="72" height="22">
+            <use xlink:href="#icon-logo-mobile-header"></use>
+          </svg>
+          <svg class="main-nav__logo-image icon-logo-table-header" role="img" focusable="false" width="147" height="40">
+            <use xlink:href="#icon-logo-table-header"></use>
+          </svg>
+          <svg class="main-nav__logo-image icon-logo-desk-header" role="img" focusable="false" width="147" height="40">
+            <use xlink:href="#icon-logo-desk-header"></use>
+          </svg>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -230,7 +234,7 @@
                   </svg>
                   <span class="visually-hidden">Обрезать</span>
                 </button>
-                <div class="range-wrapper range-wrapper--crop">
+                <div class="range-wrapper  range-wrapper--crop">
                   <div class="seting-control__range"></div>
                   <span class="seting-control__range-control"></span>
                 </div>
@@ -262,7 +266,7 @@
             </ul>
             <div class="send-button__wrapper">
               <button class="send-button send-button--submit" type="submit">Запостить</button>
-              <button class="send-button send-button--reset" type="reset" disabled>Отмена</button>
+              <button class="send-button send-button--reset" type="reset">Отмена</button>
             </div>
           </div>
         </div>
@@ -272,11 +276,13 @@
 
   <footer class="page-footer wrapper">
     <div class="footer-logo">
-      <a class="footer-logo__link" href="#">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-desk-footer.svg">
-          <img src="img/logo-table-footer.svg" alt="Pink Фотоприложения">
-        </picture>
+      <a class="footer-logo__link" href="index.html" title="Pink Фотоприложения">
+        <svg class="footer__logo-image icon-logo-table-footer" role="img" focusable="false" width="147" height="40">
+          <use xlink:href="#icon-logo-table-footer"></use>
+        </svg>
+        <svg class="footer__logo-image icon-logo-desk-footer" role="img" focusable="false" width="147" height="40">
+          <use xlink:href="#icon-logo-desk-footer"></use>
+        </svg>
         <span class="visually-hidden">Pink</span>
       </a>
     </div>
@@ -316,7 +322,7 @@
       </a>
     </div>
   </footer>
-  <!-- <script>
+  <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
 
@@ -331,6 +337,6 @@
         navMain.classList.remove('main-nav--open');
       }
     });
-  </script> -->
+  </script>
 </body>
 </html>

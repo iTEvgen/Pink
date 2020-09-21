@@ -69,13 +69,13 @@
   margin-bottom: 8px;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .range-wrapper {
   position: absolute;
   width: 275px;
   height: 50px;
+  z-index: 5;
 
   &--crop {
     left: -30px;
@@ -83,10 +83,14 @@
 
   &--fill {
     display: none;
+    // top: 105px;
+    // left: -110px;
   }
 
   &--contrast {
     display: none;
+    // top: 143px;
+    // left: -190px;
   }
 }
 
@@ -109,6 +113,14 @@
   background-color: #d22856;
   border-radius: 50%;
 
+  &--fill {
+    left: 41px;
+  }
+
+  &--contrast {
+    left: 112px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -119,6 +131,10 @@
     background-color: #f2f2f2;
     border-radius: 50%;
     cursor: pointer;
+  }
+
+  &:active::before {
+    background-color: #d22856;
   }
 }
 
@@ -133,14 +149,43 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
-  color: #d22856;
-  border: 3px solid #d22856;
   border-radius: 30px;
   box-sizing: border-box;
   cursor: pointer;
 
   &:first-child {
     margin-bottom: 13px;
+  }
+
+  &--submit {
+    color: #d22856;
+    border: 3px solid #d22856;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: #d22856;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--reset {
+    color: #dddfe0;
+    border: 3px solid #dddfe0;
+
+    &:hover,
+    &:focus {
+      color: #b5b9be;
+      border-color: #b5b9be;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #b5b9be;
+    }
   }
 }
 
@@ -151,14 +196,52 @@
   opacity: 0.1;
 }
 
-.seting-control__btn .icon-color {
-  fill: #283645;
-  opacity: 0.1;
-}
+@media (max-width: $mobile-width-only) {
+  // .seting-control__list--nojs {
+  //   margin-bottom: 110px;
 
-.seting-control__btn--on .icon-color {
-  fill: #d22856;
-  opacity: 1;
+  //   &::after {
+  //     top: 200px;
+  //   }
+  // }
+
+  // .seting-control__list--nojs .range-wrapper {
+  //   display: block;
+  // }
+
+  // .seting-control__list--js .range-wrapper {
+  //   display: none;
+  // }
+
+  // .seting-control__list--js li:first-child .range-wrapper {
+  //   display: block;
+  // }
+
+  .seting-control__btn {
+    cursor: pointer;
+
+    &:hover svg {
+      fill: #8d949b;
+    }
+
+    &:active svg {
+      fill: #d22856;
+    }
+  }
+
+  .seting-control__btn .icon-color {
+    fill: #b5b9be;
+  }
+
+  .seting-control__btn--on {
+    &:hover svg {
+      fill: #d22856;
+    }
+  }
+
+  .seting-control__btn--on .icon-color {
+    fill: #d22856;
+  }
 }
 
 @media (min-width: $table-width) {
