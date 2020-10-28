@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Pink Главная</title>
 </head>
@@ -115,15 +118,15 @@
 
             <source media="(min-width: 960px)" srcset="img/iphone-screen-desk-one@1x.npg 1x, img/iphone-screen-desk-one@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/Iphone-screen-table@1x.npg 1x, img/Iphone-screen-table@2x.png 2x">
-            <img class="app-features__image" src="img/Iphone-screen-mobile@1x.png" srcset="img/Iphone-screen-mobile@2x.png 2x" alt="Серая и скучная фотография">
+            <img class="app-features__image" src="img/Iphone-screen-mobile@1x.png" srcset="img/Iphone-screen-mobile@2x.png 2x" width="157" height="278" alt="Серая и скучная фотография">
           </picture>
           <picture class="app-features__image-wrap app-features__image-wrap--state">
             <source type="image/webp" srcset="img/iphone-screen-desk-two@1x.webp 1x, img/iphone-screen-desk-two@2x.webp 2x">
-            <img class="app-features__image" src="img/iphone-screen-desk-two@1x.npg" srcset="img/iphone-screen-desk-two@2x.png 2x" alt="Фотография окрашена в розовый цвет">
+            <img class="app-features__image" src="img/iphone-screen-desk-two@1x.npg" srcset="img/iphone-screen-desk-two@2x.png 2x" width="294" height="302" alt="Фотография окрашена в розовый цвет" loading="lazy">
           </picture>
           <picture class="app-features__image-wrap app-features__image-wrap--state">
             <source type="image/webp" srcset="img/iphone-screen-desk-three@1x.webp 1x, img/iphone-screen-desk-three@2x.webp 2x">
-            <img class="app-features__image" src="img/iphone-screen-desk-three@1x.npg" srcset="img/iphone-screen-desk-three@2x.png 2x" alt="Фотография окрашена в розовый цвет со смайликом">
+            <img class="app-features__image" src="img/iphone-screen-desk-three@1x.npg" srcset="img/iphone-screen-desk-three@2x.png 2x" width="294" height="302" alt="Фотография окрашена в розовый цвет со смайликом" loading="lazy">
           </picture>
         </div>
       </div>
@@ -235,16 +238,15 @@
       <div class="feedback__wrapper-map">
         <div>
           <picture>
-            <source type="image/webp" media="(min-width: 1500px)" srcset="img/map-desk@1x.webp 1x, img/map-desk@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 960px)" srcset="img/map-660px@1x.webp 1x, img/map-660px@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/map-table@1x.webp 1x, img/map-table@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desk@11x.webp 1x, img/map-desk@22x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/map-660px@1x.webp 1x, img/map-660px@2x.webp 2x">
             <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1500px)" srcset="img/map-desk@1x.jpg 1x, img/map-desk@2x.jpg 2x">
-            <source media="(min-width: 960px)" srcset="img/map-660px@1x.jpg 1x, img/map-660px@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/map-table@1x.jpg 1x, img/map-table@2x.jpg 2x">
-            <img class="feedback__maps" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="ул. Большая Конюшенная, 19/8">
+            <source media="(min-width: 1200px)" srcset="img/map-desk@11x.jpg 1x, img/map-desk@22x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/map-660px@1x.jpg 1x, img/map-660px@2x.jpg 2x">
+            <img class="feedback__maps" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@22x.jpg 2x" width="320" height="200" alt="ул. Большая Конюшенная, 19/8" loading="lazy">
           </picture>
+          <iframe class="feedback__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7503352691865!2d30.320328892832!3d59.938765435419576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603870746436!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
         </div>
       </div>
     </section>
